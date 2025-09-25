@@ -11,7 +11,7 @@ git clone https://github.com/Pandorijano/njuskalo_technologies_assignment.git
 2. Move to the directory
 
 ```sh
-cd njuskalo_technology_assignment
+cd njuskalo_technology_technical_assignment
 ```
 
 3. Install packages
