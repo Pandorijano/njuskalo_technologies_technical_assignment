@@ -1,0 +1,14 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright/.cache/
+
+# IntelliJ IDEA logs
+.idea/
+
+# MacOS logs
+.DS_Store
+
+# Custom
+reports/
