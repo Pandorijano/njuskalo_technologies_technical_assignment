@@ -20,6 +20,16 @@ cd njuskalo_technology_technical_assignment
 npm install
 ```
 
+## Project Structure
+
+The project is structured using the page object pattern.
+
+- `root`: Contains config files
+- `src/data`: Contains test data per site used for search and filters
+- `src/pages`: Contains a single adapter page for both sites with locators and methods
+- `src/tests`: Contains a single test which works with both sites
+- `src/utils`: Contains methods used to scrape year and milage from the filtered ads 
+
 ## How it works
 
 ### Sites and browsers matrix 
@@ -43,17 +53,6 @@ npm install
  - Suggestion box not showing up if search term is filled in: `keyboard.type()` used instead of `fill()` to slow down the input
  - Suggestion box not showing up in chrome headless mode: chrome runs the test in headed mode
  - CAPTCHA (Bolha): too many requests at the same time trigger the captcha on the production site, impossible to bypass, to handle this the number of workers is set to 2 although it does not always help
-
-
-## Project Structure
-
-The project is structured using the page object pattern.
-
-- `root`: Contains config files
-- `src/data`: Contains test data per site used for search and filters
-- `src/pages`: Contains a single adapter page for both sites with locators and methods
-- `src/tests`: Contains a single test which works with both sites
-- `src/utils`: Contains methods used to scrape year and milage from the filtered ads 
 
 ## Run tests
 
